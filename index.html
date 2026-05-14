@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRAUERN — 2028</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Trauern</a>
+  <ul class="nav-links">
+    <li><a href="#about">Film</a></li>
+    <li><a href="#commissions">Commissions</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-image-col">
+    <img src="images/img0.png" alt="">
+    <div class="hero-image-overlay"></div>
+  </div>
+
+  <div class="hero-content-col">
+    <p class="hero-eyebrow">An Independent Project</p>
+    <h1 class="hero-title">Trau<em>ern</em></h1>
+    <p class="hero-tagline">To mourn is to win.</p>
+    <p class="hero-sub">Feature Film &nbsp;&middot;&nbsp; 2028</p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-label">Director</span>
+        <span class="meta-value">Andrew M&uuml;ller</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Origin</span>
+        <span class="meta-value">German</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Release</span>
+        <span class="meta-value">2028</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-divider">
+    <div class="divider-line"></div>
+    <span class="divider-text">About the Film</span>
+    <div class="divider-line"></div>
+  </div>
+  <div class="about-strip">
+    <div class="about-number">01</div>
+    <div class="about-text">
+      <h2 class="about-heading">A Story of Grief &amp; Grace</h2>
+      <p class="about-body">
+        <em>Trauern</em> is an independent German-language feature exploring the quiet geography of loss and how mourning reshapes identity, memory, and the will to persist. Directed by Andrew M&uuml;ller, the film is a meditation on what endures when everything else dissolves. Shot in austere, intimate frames, <em>Trauern</em> asks: what does it mean to survive your own sorrow?
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMISSIONS -->
+<section class="commissions" id="commissions">
+  <div class="commissions-inner">
+    <div class="commissions-header">
+      <div class="commissions-title-block">
+        <p class="commissions-eyebrow">Open Call</p>
+        <h2 class="commissions-title">Commissions</h2>
+      </div>
+      <div class="commissions-deadline">
+        <p class="deadline-label">Application Deadline</p>
+        <p class="deadline-date">December 1st, 2026</p>
+      </div>
+    </div>
+
+    <form class="commission-form" id="commissionForm" onsubmit="handleSubmit(event)" novalidate>
+
+      <div class="form-group">
+        <label class="form-label" for="firstName">First Name</label>
+        <input class="form-input" type="text" id="firstName" placeholder="Given name" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="lastName">Last Name</label>
+        <input class="form-input" type="text" id="lastName" placeholder="Family name" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="email">Email Address</label>
+        <input class="form-input" type="email" id="email" placeholder="your@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="nationality">Nationality</label>
+        <input class="form-input" type="text" id="nationality" placeholder="Country of origin">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="role">Area of Interest</label>
+        <select class="form-select" id="role" required>
+          <option value="" disabled selected>Select a role</option>
+          <option>Acting</option>
+          <option>Cinematography</option>
+          <option>Production Design</option>
+          <option>Costume &amp; Wardrobe</option>
+          <option>Sound &amp; Music</option>
+          <option>Editing</option>
+          <option>Producing</option>
+          <option>Writing</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="experience">Years of Experience</label>
+        <select class="form-select" id="experience">
+          <option value="" disabled selected>Select range</option>
+          <option>0 &ndash; 2 years</option>
+          <option>3 &ndash; 5 years</option>
+          <option>6 &ndash; 10 years</option>
+          <option>10+ years</option>
+        </select>
+      </div>
+
+      <div class="form-group full">
+        <label class="form-label" for="portfolio">Portfolio / Reel URL</label>
+        <input class="form-input" type="url" id="portfolio" placeholder="https://...">
+      </div>
+
+      <div class="form-group full">
+        <label class="form-label" for="statement">Statement of Intent</label>
+        <textarea class="form-textarea" id="statement" placeholder="Briefly describe why you wish to participate in Trauern and what you would bring to the project&hellip;" required></textarea>
+      </div>
+
+      <p class="form-note">
+        All submissions are reviewed personally by the director. Due to volume, only candidates selected for further conversation will be contacted. By submitting this form you consent to your information being used solely for casting and crew consideration for <em>Trauern</em> (2028).
+      </p>
+
+      <div class="form-submit-row">
+        <span class="form-submit-note">Deadline: December 1st, 2026</span>
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </div>
+
+    </form>
+
+    <div class="form-success" id="formSuccess">
+      <span class="success-icon">&mdash;</span>
+      <h3 class="success-heading">Received.</h3>
+      <p class="success-body">
+        Your application has been submitted.<br>
+        We will be in touch if your profile is a fit for <em>Trauern</em>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">Trauern</span>
+  <span class="footer-copy">&copy; 2026 Andrew M&uuml;ller &nbsp;&middot;&nbsp; Independent &nbsp;&middot;&nbsp; Germany</span>
+</footer>
+
+
+</body>
+</html>
